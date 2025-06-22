@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Revanth Reddipalli - Software Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .section-padding {
+            padding: 4rem 1rem; /* Consistent padding for sections */
+            max-width: 1200px; /* Max width for content */
+            margin: 0 auto; /* Center content */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        /* Smooth scrolling for internal links */
+        html {
+            scroll-behavior: smooth;
+        }
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #4f46e5;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-gray-800 p-4 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#home" class="text-white text-2xl font-bold rounded-md hover:bg-gray-700 p-2 transition duration-300">Sri Revanth Reddipalli</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-300 hover:text-white rounded-md p-2 transition duration-300">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-white rounded-md p-2 transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-white rounded-md p-2 transition duration-300">Projects</a>
+                <a href="#certifications" class="text-gray-300 hover:text-white rounded-md p-2 transition duration-300">Certifications</a>
+                <a href="#contact" class="text-gray-300 hover:text-white rounded-md p-2 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 text-white section-padding">
+        <div class="text-center">
+            <img src="C:\Users\padma\OneDrive\Desktop\personals\Image.jpg" alt="Sri Revanth Reddipalli" class="rounded-full mx-auto mb-6 shadow-lg border-4 border-white w-64 h-64 object-cover">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Hi, I'm <span class="text-yellow-300">Sri Revanth Reddipalli</span></h1>
+            <p class="text-2xl md:text-3xl font-medium mb-8">Associate Software Engineer | .NET Full Stack Developer | Azure Cloud Solutions</p>
+            <div class="flex flex-wrap justify-center space-x-4 space-y-4 md:space-y-0">
+                <a href="#projects" class="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-600 hover:text-white transition duration-300 shadow-md">View My Work</a>
+                <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300 shadow-md">Get In Touch</a>
+                <a href="C:\Users\padma\OneDrive\Desktop\personals\SriRevanthR Resume.pdf" download class="bg-yellow-400 text-gray-900 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-900 hover:text-yellow-400 transition duration-300 shadow-md">Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-gray-50 section-padding">
+        <div class="card">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6 text-center">About Me</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                As an Associate Software Engineer at EY, I specialize in .NET Full Stack development and Azure cloud technologies within the Consulting Technology team. I focus on designing, developing, and deploying robust, scalable applications that drive tangible business transformation for clients.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                My expertise lies in building efficient and high-quality software solutions, leveraging the full .NET ecosystem and optimizing cloud infrastructure and services on Azure. I am adept at integrating complex systems and enhancing application performance to meet diverse client needs.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                As an Analytical Full-Stack Developer, I bring a passion for problem-solving and a track record of successful project delivery. I am actively expanding my skills in Artificial Intelligence and Machine Learning to innovate and streamline project development, enabling efficient delivery of solutions.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-white section-padding">
+        <div class="card">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6 text-center">Skills & Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Programming Languages</h3>
+                    <ul id="lang-skills" class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>VB.NET</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Frameworks & Technologies</h3>
+                    <ul id="framework-skills" class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                        <li>Angular</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>.NET Core</li>
+                        <li>.NET Framework</li>
+                        <li>RESTful APIs</li>
+                        <li>Microservices</li>
+                        <li>LINQ</li>
+                        <li>Entity Framework Core</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Cloud Platforms & Services</h3>
+                    <ul id="cloud-skills" class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                        <li>Microsoft Azure</li>
+                        <li>Azure App Service</li>
+                        <li>Azure Functions</li>
+                        <li>Azure DevOps (CI/CD Pipelines)</li>
+                        <li>AWS</li>
+                        <li>Kubernetes</li>
+                        <li>Terraform</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Databases</h3>
+                    <ul id="db-skills" class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                        <li>Microsoft SQL Server</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Tools & Methodologies</h3>
+                    <ul id="tool-skills" class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                        <li>Git</li>
+                        <li>VS Code</li>
+                        <li>Visual Studio</li>
+                        <li>Azure DevOps</li>
+                        <li>Agile / Scrum</li>
+                        <li>Unit Testing</li>
+                        <li>DataDog</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-gray-50 section-padding">
+        <div class="card">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6 text-center">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-2">Internal Job Portal (Angular, .NET)</h3>
+                    <p class="text-gray-600 text-sm mb-2">July 2024 - July 2024</p>
+                    <p class="text-gray-700 mb-4">
+                        Designed a user-friendly Angular-based interface, streamlining the job application process and improving user engagement.
+                        Developed backend services using .NET Core, efficiently managing job postings, applications, and user data.
+                        Integrated cloud-based solutions (AWS/Azure) for high availability, performance, and reliability.
+                    </p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <span class="font-medium">Technologies:</span> Angular, .NET Core, AWS, Azure
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-2">Employee Management System (.NET Full Stack)</h3>
+                    <p class="text-gray-600 text-sm mb-2">August 2024 - September 2024</p>
+                    <p class="text-gray-700 mb-4">
+                        Built a comprehensive Employee Management System with .NET Core & Angular, optimizing employee records, payroll, and performance tracking.
+                        Deployed the system on Azure, leveraging Azure App Services and Azure SQL Database for scalability, reliability, and high availability.
+                        Implemented Azure DevOps CI/CD pipelines to automate builds, testing, and deployments, ensuring a streamlined development workflow.
+                    </p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <span class="font-medium">Technologies:</span> .NET Core, Angular, Azure App Services, Azure SQL Database, Azure DevOps
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-2">E-Commerce Platform (.NET Full Stack)</h3>
+                    <p class="text-gray-600 text-sm mb-2">October 2024 - December 2024</p>
+                    <p class="text-700 mb-4">
+                        Developed a secure e-commerce platform using .NET Core, Angular, and SQL Server, ensuring high performance and scalability.
+                        Implemented secure payment integration using industry-standard protocols, enhancing transaction security.
+                        Built and maintained RESTful APIs with JWT authentication, enabling secure client-server communication.
+                    </p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <span class="font-medium">Technologies:</span> .NET Core, Angular, SQL Server, JWT
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-2">TMHCC – Claims Portal (Tokio Marine HCC, USA Client)</h3>
+                    <p class="text-gray-600 text-sm mb-2">January 2025 - Present</p>
+                    <p class="text-gray-700 mb-4">
+                        Developed and maintained backend services using .NET and VB.NET, ensuring efficient claims processing workflows.
+                        Built dynamic and responsive frontend components using Angular, improving the user experience and interface responsiveness.
+                        Optimized RESTful API performance and monitored backend systems using DataDog, contributing to improved application reliability and faster incident resolution.
+                        Collaborated closely with QA and Business Analysts to ensure feature completeness and adherence to business rules.
+                    </p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <span class="font-medium">Technologies:</span> .NET, VB.NET, Angular, RESTful API, DataDog
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="bg-white section-padding">
+        <div class="card">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6 text-center">Certifications</h2>
+            <ul class="list-disc list-inside text-lg text-gray-700 space-y-3 text-center">
+                <li><a href="https://learn.microsoft.com/en-us/users/srirevanthreddipalli-4576/credentials/8224f081b7b6310d?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="text-blue-600 hover:underline">Microsoft Certified: Azure AI Fundamentals</a></li>
+                <li><a href="https://learn.microsoft.com/en-us/users/srirevanthreddipalli-4576/credentials/d8fee1dcaa7d5516?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="text-blue-600 hover:underline">Microsoft Certified: Azure Fundamentals</a></li>
+                <li><a href="#" class="text-blue-600 hover:underline">Developer Job Simulation</a> (December 2023)</li>
+                <li><a href="#" class="text-blue-600 hover:underline">AWS Certificate</a> (September 2023)</li>
+                <li><a href="#" class="text-blue-600 hover:underline">Python Data Structures</a> (February 2022)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white section-padding">
+        <div class="card bg-white text-gray-800">
+            <h2 class="text-4xl font-bold mb-6 text-center">Get In Touch</h2>
+            <p class="text-lg mb-8 text-center">I'm always open to new opportunities and collaborations. Feel feel to reach out!</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <a href="mailto:srirevanthr@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-md">Email Me</a>
+                <a href="https://www.linkedin.com/in/sri-revanth-reddipalli/" target="_blank" class="bg-gray-800 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-900 transition duration-300 shadow-md">LinkedIn Profile</a>
+                <a href="https://github.com/SriRevanth" target="_blank" class="bg-purple-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-purple-700 transition duration-300 shadow-md">GitHub Profile</a>
+            </div>
+               <p class="text-center text-gray-600 text-sm mt-8">Bangalore, India</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 p-4 text-center text-sm">
+        <div class="max-w-7xl mx-auto">
+            &copy; 2025 Sri Revanth Reddipalli. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
